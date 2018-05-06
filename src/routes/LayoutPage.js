@@ -1,19 +1,19 @@
 import React from 'react';
 import { connect } from 'dva';
 import MainLayout from '../../components/layout/MainLayout'
-import styles from './HomePage.scss';
 
-const HomePage = ({example, history, dispatch}) => {
+
+const LayoutPage = ({example, history, dispatch}) => {
   return (
     <MainLayout history={history} title="首页">
-      <div className={styles.Home}>
-        <h1>Home Page</h1>
+      <div>
+        <h1>Layout Page</h1>
       </div>
     </MainLayout>
   );
 }
 
-HomePage.propTypes = {
+LayoutPage.propTypes = {
 };
 
 const mapStateToProps = (state) => {
@@ -22,4 +22,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(HomePage);
+export default connect(mapStateToProps)(LayoutPage);
