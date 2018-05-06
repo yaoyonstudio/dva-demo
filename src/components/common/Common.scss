@@ -1,0 +1,33 @@
+.AppHeader {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: .44rem;
+  background-color: #eee;
+  h2 {
+    font-size: .16rem;
+    color: #333;
+    text-align: center;
+    line-height: .44rem;
+    padding: 0 .44rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.AppTabMenu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: .54rem;
+  background-color: #555;
+  ul {
+    li {
+      color: #fff;
+    }
+  }
+}
