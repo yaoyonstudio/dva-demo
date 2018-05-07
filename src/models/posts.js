@@ -20,7 +20,8 @@ export default {
           let _query = { page: 1}
           if (query && query.page) {
             _query = query
-          } 
+          }
+          dispatch({ type: 'initList' })
           dispatch({ type: 'getPosts', payload: _query });
         }
         if (pathname === '/post') {
@@ -62,6 +63,12 @@ export default {
   },
 
   reducers: {
+    initList (state, action) {
+      return {
+        ...state,
+        list: []
+      }
+    },
     initPost (state, action) {
       return {
         ...state,
