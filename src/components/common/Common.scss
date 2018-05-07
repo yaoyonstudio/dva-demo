@@ -18,6 +18,23 @@
   }
 }
 
+.backIcon, .rightIcon {
+  width: .44rem;
+  height: .44rem;
+  position: absolute;
+  top: 0;
+}
+
+.backIcon {
+  left: 0;
+  background: url(../../assets/back.svg) no-repeat .08rem center;
+  background-size: .22rem;
+}
+
+.rightIcon {
+  right: 0;
+}
+
 .AppTabMenu {
   position: fixed;
   width: 100%;
